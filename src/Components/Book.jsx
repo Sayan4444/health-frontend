@@ -38,11 +38,11 @@ const Book = () => {
         toast.success("Booking successful!");
       }
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
     } catch (error) {
       toast.dismiss();
       toast.error("Something went wrong!");
-      console.log(error.message);
+      // console.log(error.message);
     }
   };
 
