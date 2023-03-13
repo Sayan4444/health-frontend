@@ -24,7 +24,7 @@ const Book = () => {
   const uploadData = async () => {
     try {
       toast.loading("Loading...");
-      const response = await fetch(process.env.URL, {
+      const response = await fetch(process.env.REACT_APP_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
